@@ -1,0 +1,61 @@
+@import "variables.less";
+@import "global.less";
+
+.customize-step{
+	margin-bottom: 20px;
+	h4{
+		color: @brand-primary;
+		i{margin-right: 10px;}
+	}
+	ul{
+		li{
+			line-height: 40px;
+			height: 40px;
+			border-bottom: 1px dashed @brand-primary;
+			display: flex;
+			justify-content: space-between;
+			i{margin-right: 10px;}
+		}
+		li:nth-child(odd){background-color: #fcfcfc;}
+	}
+	input[type='text']{
+		bow-shadow: none;
+		border: 2px dashed @brand-primary;
+		color: @brand-primary;
+		height: 40px;
+		text-align: center;
+	}
+}
+.modal-dialog{
+	.modal-body{
+		.carousel-inner{
+			.item{
+				height: 200px;
+				img{
+					height: 100%;
+					margin: 0 auto;
+				}
+			}
+			.carousel-caption{
+				background-color: rgba(29, 43, 66, .85);
+				bottom: 0;
+				padding: 10px;
+			}
+			.carousel-caption.select:before{
+				position: absolute;
+				content: "\f058";
+				font: normal normal normal 14px/1 FontAwesome;
+				right: 20px;
+				font-size: 22px;
+			}
+		}
+		.carousel-control{
+			display: flex;
+			align-items: center;
+			span{margin: auto;}
+		}
+	}
+	.modal-footer{
+		text-align: center;
+	}
+}

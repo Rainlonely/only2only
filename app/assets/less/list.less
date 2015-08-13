@@ -20,14 +20,39 @@
 			border: 0;
 			a{color: #fff}
 		}
-		li.active{a{color: @brand-primary;}}
+		li.active{
+			a{
+				color: #fff;
+				border: 0;
+				background-color: @brand-primary;
+				position: relative;
+			}
+			a:before{
+				content: "";
+				position: absolute;
+			    border: 10px solid transparent;
+			    border-top: 0;
+			    border-bottom-color: #fff;
+			    bottom: -2px;
+			}
+		}
 	}
 	.tab-content{
 		border: 1px solid @brand-primary;
+	    height: 200px;
+    	overflow-y: scroll;
 		ul li{
 			line-height: 40px;
 			padding-left: 10px;
 			border-bottom: 1px dashed @brand-primary;
+			position: relative;
+		}
+		ul li.selected:after{
+			content: "\f00c";
+			position: absolute;
+			font: normal normal normal 14px/1 FontAwesome;
+			right: 20px;
+			top: 15px;
 		}
 		ul li:nth-last-child(1){border-bottom: 0;}
 	}

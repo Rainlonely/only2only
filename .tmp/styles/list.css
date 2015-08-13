@@ -290,15 +290,36 @@ footer {
   color: #ffffff;
 }
 #filter-box .nav-tabs li.active a {
-  color: #293d5e;
+  color: #fff;
+  border: 0;
+  background-color: #293d5e;
+  position: relative;
+}
+#filter-box .nav-tabs li.active a:before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 0;
+  border-bottom-color: #fff;
+  bottom: -2px;
 }
 #filter-box .tab-content {
   border: 1px solid #293d5e;
+  height: 200px;
+  overflow-y: scroll;
 }
 #filter-box .tab-content ul li {
   line-height: 40px;
   padding-left: 10px;
   border-bottom: 1px dashed #293d5e;
+  position: relative;
+}
+#filter-box .tab-content ul li.selected:after {
+  content: "\f00c";
+  position: absolute;
+  font: normal normal normal 14px/1 FontAwesome;
+  right: 20px;
+  top: 15px;
 }
 #filter-box .tab-content ul li:nth-last-child(1) {
   border-bottom: 0;
