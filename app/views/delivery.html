@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="Rain Wu" name="author" />
+    <title>ONLY2ONLY</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/cart.min.css">
+</head>
+
+<body>
+    <header class="navbar navbar-static-top" id="top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aaria-expanded="false">
+                    <div class="icon">
+                        <div class="line top left"></div>
+                        <div class="line top right"></div>
+                        <div class="line mid"></div>
+                        <div class="line bottom left"></div>
+                        <div class="line bottom right"></div>
+                    </div>
+                </button>
+                <button class="fa fa-cart-plus" href="cart.html"></button>
+                <a href="" class="navbar-brand"></a>
+            </div>
+            <nav class="navbar-collapse collapse" aria-expanded="false">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="fa fa-user"><a href="">账户登陆</a></li>
+                    <li class="fa fa-institution"><a href="" target="_blank">企业定制</a></li>
+                    <li class="fa fa-newspaper-o">
+                        <a role="button" data-toggle="collapse" href="#nav_category" aria-expanded="false" aria-controls="nav_category">产品目录</a>
+                    </li>
+                    <div class="collapse" id="nav_category">
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-hand-o-right"></i><a href="" title="">正装两件套</a></li>
+                            <li class="list-group-item"><i class="fa fa-hand-o-right"></i><a href="" title="">正装三件套</a></li>
+                            <li class="list-group-item"><i class="fa fa-hand-o-right"></i><a href="" title="">西装</a></li>
+                            <li class="list-group-item"><i class="fa fa-hand-o-right"></i><a href="" title="">衬衫</a></li>
+                            <li class="list-group-item"><i class="fa fa-hand-o-right"></i><a href="" title="">裤子</a></li>
+                        </ul>
+                    </div>
+                    <li class="fa fa-question-circle">
+                        <a href="#nav_help" data-toggle="collapse" role="button" aria-expaned="false" aria-controls="nav_help">帮助中心</a>
+                    </li>
+                    <div class="collapse" id="nav_help">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="" title="">如何正确量身<i class="fa fa-magic pull-right"></i></a></li>
+                            <li class="list-group-item"><a href="" title="">如何选择面料<i class="fa fa-tags pull-right"></i></a></li>
+                            <li class="list-group-item"><a href="" title="">服务介绍<i class="fa fa-info-circle pull-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <li class="fa fa-info-circle">
+                        <a href="#nav_about" data-toggle="collapse" role="button" aria-expaned="false" aria-controls="nav_about">关于我们</a>
+                    </li>
+                    <div class="collapse" id="nav_about">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="" title="">公司简介<i class="fa fa-newspaper-o pull-right"></i></a></li>
+                            <li class="list-group-item"><a href="" title="">联系方式<i class="fa fa-phone-square pull-right"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container cart-box">
+        <h4><i class="fa fa-truck"></i>配送信息</h4>
+        <div class="address-box well">
+            <p class="line"><i class="fa fa-map-marker">收件信息</i><i class="fa fa-edit">编辑</i></p>
+            <div>
+                <p>
+                    <label>收件人：</label>XXX</p>
+                <p>
+                    <label>收件地址：</label>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                <p>
+                    <label>邮编：</label>123456</p>
+                <p>
+                    <label>手机：</label>1333333333</p>
+            </div>
+        </div>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default well">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="line">
+                      <i class="fa fa-car">配送方式</i>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <ul class="panel-body">
+                    <li><a href="" title="">快速免邮</a></li>
+                    <li><a href="" title="">顺丰</a></li>
+                    <li><a href="" title="">平邮</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-default well">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed line" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa fa-money">付款方式</i>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <ul class="panel-body">
+                    <li><a href="" title="">货到付款</a></li>
+                    <li><a href="" title="">支付宝</a></li>
+                    <li><a href="" title="">微信钱包</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="summary-box">
+            <span>合计¥3333.00</span>
+            <a href="" class="btn btn-primary">提交订单</a>
+        </div>
+    </section>
+    
+    <footer>版权所有 2015 Only2only china . 保留所有权利
+        <br> Copyright © 北京艾迪信科科技有限公司 京ICP备15030588号-1
+    </footer>
+    <script src="../resources/js/jquery.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+</body>
+
+</html>
