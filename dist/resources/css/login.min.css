@@ -283,3 +283,10 @@ footer {
 .form-group .btn-border-dark {
   padding: 6px 12px;
 }
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+  line-height: 30px;
+  margin-top: 10px;
+}
