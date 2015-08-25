@@ -7,6 +7,10 @@ ul {
 .fa {
   color: #293d5e;
 }
+a:hover,
+a:focus {
+  text-decoration: none;
+}
 /**reset**/
 /**form style**/
 .space-20 {
