@@ -10,9 +10,15 @@ ul {
 a:hover,
 a:focus {
   text-decoration: none;
+  color: inherit;
 }
 /**reset**/
 /**form style**/
+.text-limit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .space-20 {
   margin: 20px 0;
   overflow: hidden;
@@ -102,7 +108,21 @@ a:focus {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  background-color: #fff;
+  background-color: transparent;
+}
+.item-amount {
+  position: absolute;
+  z-index: 2;
+  background-color: #e83237;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+  right: 14px;
+  top: 7px;
 }
 .navbar-static-top .navbar-header {
   border-bottom: 1px solid #293d5e;
@@ -194,7 +214,6 @@ a:focus {
   height: 1px;
   background: #293d5e;
   position: absolute;
-  transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
 }
 .navbar-toggle .icon .line.top {
@@ -216,39 +235,30 @@ a:focus {
   right: 0;
 }
 .navbar-toggle .icon .line.top.left {
-  -webkit-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
 }
 .navbar-toggle .icon .line.top.right {
-  -webkit-transform-origin: 100% 0%;
   transform-origin: 100% 0%;
 }
 .navbar-toggle .icon .line.bottom.left {
-  -webkit-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
 }
 .navbar-toggle .icon .line.bottom.right {
-  -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
 .navbar-toggle .icon .line.top.left {
-  -webkit-transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
   transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
 }
 .navbar-toggle .icon .line.top.right {
-  -webkit-transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
   transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
 }
 .navbar-toggle .icon .line.bottom.left {
-  -webkit-transform: translate(2px, 2px) rotate(-45deg) scaleX(1.25);
   transform: translate(2px, 2px) rotate(-45deg) scaleX(1.25);
 }
 .navbar-toggle .icon .line.bottom.right {
-  -webkit-transform: translate(-2px, 2px) rotate(45deg) scaleX(1.25);
   transform: translate(-2px, 2px) rotate(45deg) scaleX(1.25);
 }
 .navbar-toggle .icon .line.mid {
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
 .navbar-toggle.collapsed .icon .line.top.left,
@@ -256,7 +266,6 @@ a:focus {
 .navbar-toggle.collapsed .icon .line.bottom.left,
 .navbar-toggle.collapsed .icon .line.bottom.right,
 .navbar-toggle.collapsed .icon .line.mid {
-  -webkit-transform: none;
   transform: none;
 }
 /** end header***/

@@ -6,9 +6,17 @@ ul{
     list-style: none;
 }
 .fa{color: @brand-primary;}
-a:hover,a:focus{text-decoration: none;}
+a:hover,a:focus{
+    text-decoration: none;
+    color: inherit;
+}
 /**reset**/
 /**form style**/
+.text-limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .space-20{margin: 20px 0; overflow: hidden;}
 .divider{
     position: relative; text-align: center;
@@ -94,9 +102,23 @@ a:hover,a:focus{text-decoration: none;}
 }
 .nav > li:nth-last-child(2){border: 0;}
 .nav > li > a:hover, .nav > li > a:focus{
-    background-color: #fff;
+    background-color: transparent;
 }
 
+.item-amount{
+    position: absolute;
+    z-index: 2;
+    background-color: #e83237;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16px;
+    right: 14px;
+    top: 7px;
+}
 .navbar-static-top{
     .navbar-header{
         border-bottom: 1px solid @brand-primary;
